@@ -256,8 +256,8 @@ CREATE TABLE `usuarios` (
 --
 
 INSERT INTO `usuarios` (`id`, `usuario`, `nombre`, `clave`, `estado`) VALUES
-(1, 'admin', 'Tu gordito lindo', '8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918', 1),
-(2, 'criss', 'cristofer', '519ba91a5a5b4afb9dc66f8805ce8c442b6576316c19c6896af2fa9bda6aff71', 1);
+(1, 'admin', 'stiven', '8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918', 1),
+(2, 'criss', 'cristofer', 'F9B6CF65CCA7200C9A1A8377597BB8F95C245A71E25FEA56BADE6A11F553516C', 1);
 
 --
 -- Índices para tablas volcadas
