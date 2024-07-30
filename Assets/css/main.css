@@ -6958,6 +6958,9 @@ a.close.disabled {
   vertical-align: text-top !important;
 }
 
+.btn-primary {
+  background-color: var(--primary);
+}
 
 a.bg-primary:hover, a.bg-primary:focus,
 button.bg-primary:hover,
