@@ -1949,7 +1949,6 @@ pre code {
   color: #FFF;
   background-color: rgba(255, 255, 255, 0.075);
 }
-
 @media (max-width: 575.98px) {
   .table-responsive-sm {
     display: block;
@@ -2616,11 +2615,6 @@ fieldset:disabled a.btn {
   pointer-events: none;
 }
 
-.btn-primary {
-  color: #FFF;
-  background-color: #009688;
-  border-color: #009688;
-}
 
 .btn-primary:hover {
   color: #FFF;
@@ -11759,8 +11753,6 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.focus {
   -webkit-background-clip: padding-box;
   -moz-background-clip: padding;
   background-clip: padding-box;
-  *border-right-width: 2px;
-  *border-bottom-width: 2px;
   color: #333333;
   font-size: 13px;
   line-height: 1.42857143;
@@ -15526,7 +15518,7 @@ be a descendant of the grid when it is being dragged.
 
 .tile {
   position: relative;
-  background: #ffffff;
+  background-color: var(--secondary);
   border-radius: 3px;
   padding: 20px;
   -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
@@ -16390,7 +16382,7 @@ be a descendant of the grid when it is being dragged.
   position: relative;
   min-width: 350px;
   min-height: 390px;
-  background-color: #fff;
+  background-color: var(--secondary);
   -webkit-box-shadow: 0px 29px 147.5px 102.5px rgba(0, 0, 0, 0.05), 0px 29px 95px 0px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 29px 147.5px 102.5px rgba(0, 0, 0, 0.05), 0px 29px 95px 0px rgba(0, 0, 0, 0.16);
   -webkit-perspective: 800px;
