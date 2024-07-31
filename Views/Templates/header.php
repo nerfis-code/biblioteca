@@ -11,10 +11,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Main CSS-->
-    <link href="<?php echo base_url; ?>Assets/css/main.css" rel="stylesheet" />
 	<link href="<?php echo base_url; ?>Assets/css/bootstrap.min.css" rel="stylesheet" />
     <link href="<?php echo base_url; ?>Assets/css/datatables.min.css" rel="stylesheet" crossorigin="anonymous" />
     <link href="<?php echo base_url; ?>Assets/css/select2.min.css" rel="stylesheet" />
+    <link href="<?php echo base_url; ?>Assets/css/main.css" rel="stylesheet" />
 	<link href="<?php echo base_url; ?>Assets/css/estilos.css" rel="stylesheet" />
 	<link href="<?php echo base_url; ?>Assets/css/style.css" rel="stylesheet" />
     
@@ -24,8 +24,9 @@
 
 <body class="container-fluid position-relative d-flex p-0">
     <!-- Navbar-->
-    <header class="app-header"><a class="app-header__logo" href="<?php echo base_url; ?>Configuracion/admin">REYMI</a>
-        <!-- Sidebar toggle button--><a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
+    <header class="app-header"><a class="app-header__logo" href="<?php echo base_url; ?>Configuracion/admin">BiblioSmart</a>
+        <!-- Sidebar toggle button--><input class = "sidebar_toggle" data-toggle="sidebar" aria-label="Hide Sidebar" type="checkbox" name="" id="">
+         
         <!-- Navbar Right Menu-->
         <ul class="app-nav">
             <!--Notification Menu-->
@@ -53,7 +54,7 @@
     <div class="sidebar pe-4 pb-3">
             <nav class="navbar bg-secondary navbar-dark">
                 <a href="<?php echo base_url; ?>Configuracion/admin" class="navbar-brand mx-4 mb-3">
-                    <h3 class="text-primary"><i class="fa fa-user-edit me-2"></i>REYMI</h3>
+                    <h3 class="text-primary"><i class="fa fa-user-edit me-2"></i>BiblioSmart</h3>
                 </a>
                 <div class="d-flex align-items-center ms-4 mb-4">
                     <div class="position-relative">
@@ -67,9 +68,9 @@
                 </div>
                 <div class="navbar-nav w-100">
                     <a href="<?php echo base_url; ?>Configuracion/admin" class="nav-item nav-link active"><i class="fa fa-tachometer-alt me-2"></i>Tabla</a>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-laptop me-2"></i>Libros</a>
-                        <div class="dropdown-menu bg-transparent border-0">
+                    <div class="treeview">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="treeview"> <i class="fa fa-laptop me-2"></i>Libros<i class="treeview-indicator fa fa-angle-right"></i></a>
+                        <div class="treeview-menu">
                             <a href="<?php echo base_url; ?>Autor" class="dropdown-item">Autor</a>
                             <a href="<?php echo base_url; ?>Editorial" class="dropdown-item">Editorial</a>
                             <a href="<?php echo base_url; ?>Libros" class="dropdown-item">Libros</a>
@@ -78,21 +79,20 @@
                     <a href="<?php echo base_url; ?>Prestamos" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Prestamos</a>
                     <a href="<?php echo base_url; ?>Estudiantes" class="nav-item nav-link"><i class="fa fa-keyboard me-2"></i>Estudiantes</a>
                     <a href="<?php echo base_url; ?>Materia" class="nav-item nav-link"><i class="fa fa-table me-2"></i>Materias</a>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="far fa-file-alt me-2"></i>Administración</a>
-                        <div class="dropdown-menu bg-transparent border-0">
-                            <a href="<?php echo base_url; ?>Usuarios" class="dropdown-item">Usuarios</a>
-                            <a href="<?php echo base_url; ?>Configuracion" class="dropdown-item">Configuración</a>
+                    <div class="treeview">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="treeview"> <i class="app-menu__icon fa fa-wrench"></i>Administración<i class="treeview-indicator fa fa-angle-right"></i></a>
+                        <div class="treeview-menu">
+                            <a class="dropdown-item" href="<?php echo base_url; ?>Usuarios"><i class="icon fa fa-user-o"></i> Usuarios</a>
+                            <a class="dropdown-item" href="<?php echo base_url; ?>Configuracion"><i class="icon fa fa-cogs"></i> Configuración</a>
                         </div>
                     </div>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="far fa-file-alt me-2"></i>Reportes</a>
-                        <div class="dropdown-menu bg-transparent border-0">
+                    <div class="treeview">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="treeview"> <i class="far fa-file-alt me-2"></i>Reportes<i class="treeview-indicator fa fa-angle-right"></i></a>
+                        <div class="treeview-menu">
                             <a href="<?php echo base_url; ?>Prestamos/pdf" class="dropdown-item">Libros Prestados</a>
                         </div>
                     </div>
                 </div>
             </nav>
         </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <main class="content">
