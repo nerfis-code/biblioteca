@@ -499,7 +499,7 @@ function btnReingresarUser(id) {
 }
 //Fin Usuarios
 function frmEstudiante() {
-    document.getElementById("title").textContent = "Nuevo Estuadiante";
+    document.getElementById("title").textContent = "Nuevo Lector";
     document.getElementById("btnAccion").textContent = "Registrar";
     document.getElementById("frmEstudiante").reset();
     document.getElementById("id").value = "";
@@ -509,12 +509,12 @@ function frmEstudiante() {
 function registrarEstudiante(e) {
     e.preventDefault();
     const codigo = document.getElementById("codigo");
-    const dni = document.getElementById("dni");
+    const cedula = document.getElementById("cedula");
     const nombre = document.getElementById("nombre");
     const carrera = document.getElementById("carrera");
     const telefono = document.getElementById("telefono");
     const direccion = document.getElementById("direccion");
-    if (codigo.value == "" || dni.value == "" || nombre.value == ""
+    if (codigo.value == "" || cedula.value == "" || nombre.value == ""
     || telefono.value == "" || direccion.value == "" || carrera.value == "") {
         alertas('Todo los campos son requeridos', 'warning');
     } else {
@@ -547,7 +547,7 @@ function btnEditarEst(id) {
             const res = JSON.parse(this.responseText);
             document.getElementById("id").value = res.id;
             document.getElementById("codigo").value = res.codigo;
-            document.getElementById("dni").value = res.dni;
+            document.getElementById("cedula").value = res.cedula;
             document.getElementById("nombre").value = res.nombre;
             document.getElementById("carrera").value = res.carrera;
             document.getElementById("telefono").value = res.telefono;

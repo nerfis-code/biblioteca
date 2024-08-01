@@ -25,7 +25,6 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <h1>Holas</h1>
                         </tbody>
                     </table>
                 </div>

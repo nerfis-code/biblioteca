@@ -77,7 +77,7 @@
                         </div>
                     </div>
                     <a href="<?php echo base_url; ?>Prestamos" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Prestamos</a>
-                    <a href="<?php echo base_url; ?>Estudiantes" class="nav-item nav-link"><i class="fa fa-keyboard me-2"></i>Estudiantes</a>
+                    <a href="<?php echo base_url; ?>Estudiantes" class="nav-item nav-link"><i class="fa fa-keyboard me-2"></i>Lectores</a>
                     <a href="<?php echo base_url; ?>Materia" class="nav-item nav-link"><i class="fa fa-table me-2"></i>Materias</a>
                     <div class="treeview">
                         <a class="nav-link dropdown-toggle" href="#" data-toggle="treeview"> <i class="app-menu__icon fa fa-wrench"></i>Administración<i class="treeview-indicator fa fa-angle-right"></i></a>
