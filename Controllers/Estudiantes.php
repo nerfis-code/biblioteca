@@ -42,17 +42,17 @@ class Estudiantes extends Controller
     public function registrar()
     {
         $codigo = strClean($_POST['codigo']);
-        $dni = strClean($_POST['dni']);
+        $cedula = strClean($_POST['cedula']);
         $nombre = strClean($_POST['nombre']);
         $carrera = strClean($_POST['carrera']);
         $direccion = strClean($_POST['direccion']);
         $telefono = strClean($_POST['telefono']);
         $id = strClean($_POST['id']);
-        if (empty($codigo) || empty($dni) || empty($nombre) || empty($carrera)) {
+        if (empty($codigo) || empty($cedula) || empty($nombre) || empty($carrera)) {
             $msg = array('msg' => 'Todo los campos son requeridos', 'icono' => 'warning');
         } else {
             if ($id == "") {
-                    $data = $this->model->insertarEstudiante($codigo, $dni, $nombre, $carrera, $direccion, $telefono);
+                    $data = $this->model->insertarEstudiante($codigo, $cedula, $nombre, $carrera, $direccion, $telefono);
                     if ($data == "ok") {
                         $msg = array('msg' => 'Estudiante registrado', 'icono' => 'success');
                     } else if ($data == "existe") {
@@ -61,7 +61,7 @@ class Estudiantes extends Controller
                         $msg = array('msg' => 'Error al registrar', 'icono' => 'error');
                     }
             } else {
-                $data = $this->model->actualizarEstudiante($codigo, $dni, $nombre, $carrera, $direccion, $telefono, $id);
+                $data = $this->model->actualizarEstudiante($codigo, $cedula, $nombre, $carrera, $direccion, $telefono, $id);
                 if ($data == "modificado") {
                     $msg = array('msg' => 'Estudiante modificado', 'icono' => 'success');
                 } else {

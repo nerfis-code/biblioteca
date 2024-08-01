@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", function(){
         },
         columns: [{'data': 'id'},
             {'data': 'codigo'},
-            {'data': 'dni'},
+            {'data': 'cedula'},
             {'data': 'nombre'},
             {'data':'carrera'},
             {'data': 'direccion'},

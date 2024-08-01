@@ -118,7 +118,7 @@ INSERT INTO `editorial` (`id`, `editorial`, `estado`) VALUES
 CREATE TABLE `estudiante` (
   `id` int(11) NOT NULL,
   `codigo` varchar(20) NOT NULL,
-  `dni` varchar(20) NOT NULL,
+  `cedula` varchar(20) NOT NULL,
   `nombre` varchar(150) NOT NULL,
   `carrera` varchar(255) NOT NULL,
   `direccion` text NOT NULL,
@@ -130,7 +130,7 @@ CREATE TABLE `estudiante` (
 -- Volcado de datos para la tabla `estudiante`
 --
 
-INSERT INTO `estudiante` (`id`, `codigo`, `dni`, `nombre`, `carrera`, `direccion`, `telefono`, `estado`) VALUES
+INSERT INTO `estudiante` (`id`, `codigo`, `cedula`, `nombre`, `carrera`, `direccion`, `telefono`, `estado`) VALUES
 (1, '12345', '20196754', 'Cristofer alcantara', 'Ingenieria de sistemas', 'Los Minas', '925491523', 1),
 (2, '465', '20156767', 'Cualquier estudiente', 'Ingenieria', 'Santiago', '987978456', 1);
 

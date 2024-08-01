@@ -1684,7 +1684,7 @@ pre code {
 .table {
   width: 100%;
   margin-bottom: 1rem;
-  color: #212529;
+  color: white;
 }
 
 .table th,
@@ -14943,7 +14943,7 @@ be a descendant of the grid when it is being dragged.
 }
 
 .app-header__logo {
-  display: none;
+  
   -webkit-box-flex: 1;
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
@@ -14953,15 +14953,15 @@ be a descendant of the grid when it is being dragged.
   font-size: 26px;
   font-weight: 400;
   line-height: 50px;
+  display: inline;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .app-header__logo {
-    display: inline;
+    display: none;
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
-    display: block;
     width: 230px;
   }
 }
@@ -14971,15 +14971,6 @@ be a descendant of the grid when it is being dragged.
   color: #fff;
 }
 
-.app-sidebar__toggle {
-  padding: 0 15px;
-  font-family: fontAwesome;
-  color: #fff;
-  line-height: 2.4;
-  -webkit-transition: background-color 0.3s ease;
-  -o-transition: background-color 0.3s ease;
-  transition: background-color 0.3s ease;
-}
 
 
 @media (max-width: 767px) {
@@ -15539,6 +15530,7 @@ be a descendant of the grid when it is being dragged.
 .tile {
   position: relative;
   background-color: var(--secondary);
+  color: white;
   border-radius: 3px;
   padding: 20px;
   -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
