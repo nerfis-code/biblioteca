@@ -40,8 +40,8 @@ CREATE TABLE `autor` (
 
 INSERT INTO `autor` (`id`, `autor`, `imagen`, `estado`) VALUES
 (1, 'ultima prueba', 'logo.png', 1),
-(2, 'cambiar el nombre llll', '20210514132528.jpg', 1),
-(3, 'popoiipippi', 'logo.png', 1);
+(2, 'como bajar de peso by El Gordo', '20210514132528.jpg', 1),
+(3, 'Luna de pluton', 'logo.png', 1);
 
 -- --------------------------------------------------------
 
@@ -63,7 +63,7 @@ CREATE TABLE `configuracion` (
 --
 
 INSERT INTO `configuracion` (`id`, `nombre`, `telefono`, `direccion`, `correo`, `foto`) VALUES
-(1, 'Vida Informático', '925491523', 'Lima - Perú', 'angelsifuentes@gmail.com', 'logo.png');
+(1, 'Criss', '8098580316', 'Santo domingo', 'cristofer@gmail.com', 'logo.png');
 
 -- --------------------------------------------------------
 
@@ -106,7 +106,8 @@ CREATE TABLE `editorial` (
 
 INSERT INTO `editorial` (`id`, `editorial`, `estado`) VALUES
 (1, 'Ninguna', 1),
-(2, 'Toribio anyarin', 0);
+(2, 'Toribio anyarin', 0),
+(3, 'Los charos', 0);
 
 -- --------------------------------------------------------
 
@@ -130,8 +131,8 @@ CREATE TABLE `estudiante` (
 --
 
 INSERT INTO `estudiante` (`id`, `codigo`, `dni`, `nombre`, `carrera`, `direccion`, `telefono`, `estado`) VALUES
-(1, '12345', '74589745', 'Angel sifuentes', 'Ingenieria de sistemas', 'Los Minas', '925491523', 1),
-(2, '465', '9779879', 'Prueba', 'Ingenieria', 'Santiago', '987978456', 1);
+(1, '12345', '20196754', 'Cristofer alcantara', 'Ingenieria de sistemas', 'Los Minas', '925491523', 1),
+(2, '465', '20156767', 'Cualquier estudiente', 'Ingenieria', 'Santiago', '987978456', 1);
 
 -- --------------------------------------------------------
 
@@ -158,7 +159,7 @@ CREATE TABLE `libro` (
 --
 
 INSERT INTO `libro` (`id`, `titulo`, `cantidad`, `id_autor`, `id_editorial`, `anio_edicion`, `id_materia`, `num_pagina`, `descripcion`, `imagen`, `estado`) VALUES
-(1, 'poiopioioiop', 50, 1, 1, '2021-05-08', 1, 1335, 'si', 'logo.png', 1),
+(1, 'Picapollo > KFC', 50, 1, 1, '2021-05-08', 1, 1335, 'si', 'logo.png', 1),
 (2, 'Javascript', 69, 1, 1, '2021-05-08', 2, 1478, 'Domina javascript', '20210514132615.jpg', 1),
 (3, 'python para todos', 23, 1, 1, '2021-05-08', 1, 258, 'anaconda', 'logo.png', 1),
 (4, 'ultima prueba', 23, 1, 1, '2021-05-14', 1, 569, '', '20210514132757.jpg', 1);
